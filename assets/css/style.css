@@ -1,0 +1,137 @@
+:root {
+  --color-dark: #101820;
+  --color-white: #ffffff;
+  --color-green: #4c9c2e;
+  --color-darkGreen: #1b6f59;
+  --color-darkerGreen: rgb(5, 48, 37);
+  --color-cyan: #00a19b;
+  --color-grey-blue: #7b8f9a;
+  --color-blue: #124635;
+  --color-haki: #85af9a;
+  --color-yellow: #fdda64;
+
+  --transition: all 400ms ease;
+
+  --main-font: "Poppins", CenturyGothic, sans-serif;
+  --secondary-font: "Montserrat", sans-serif, serif;
+  --container-width-main: 119.5rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  outline: 0;
+  border: 0;
+}
+
+html {
+  box-sizing: border-box;
+  /*10px/16px = 62.5% -> 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--main-font) !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: -0.015em;
+  overflow-x: hidden;
+
+  color: var(--color-grey-blue);
+  background-color: var(--color-white);
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.container {
+  width: 90%;
+  max-width: var(--container-width-main);
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.section__strategies .row ul {
+  list-style: disc;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 10rem;
+  line-height: 10rem;
+  letter-spacing: -0.01em;
+  color: var(--color-dark);
+  font-family: var(--secondary-font) !important;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 4.8rem;
+  line-height: 5.2rem;
+  color: var(--color-dark);
+  font-family: var(--secondary-font) !important;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 2.8rem;
+  line-height: 3.8rem;
+  letter-spacing: -0.015em;
+  color: var(--color-dark);
+  font-family: var(--secondary-font) !important;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  letter-spacing: -0.015em;
+  color: var(--color-dark);
+  font-family: var(--secondary-font) !important;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.pagination {
+  justify-content: center !important;
+}
+
+.pagination a {
+  padding: 0 !important;
+}
+
+.pagination a:hover {
+  color: #b4b4b4 !important;
+}
+
+.pagination .active a {
+  border: none !important;
+  background-color: #b4b4b4 !important;
+}
+
+/* .swiper-slide {
+    margin-right: 40px !important;
+} */
