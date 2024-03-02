@@ -28,7 +28,6 @@
 }
 
 .about__headSection{
-    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -76,6 +75,7 @@
 }
 
 .about__headSection--image{
+    min-width: 38rem;
     flex: 1;
     border-radius: 1.5rem;
     overflow: hidden;
@@ -89,6 +89,25 @@
     font-weight: 600;
     color: #666666;
 }
+
+@media screen and (max-width: 768px) {
+    .about__headSection{
+        flex-direction: column;
+    }
+
+    .about__nav, .about__nav--link{
+        width: 100%;
+    }
+
+    .about__headSection--image{
+        min-width: unset;
+        width: 100%;
+    }
+}
+
+
+        /*   W H O   W E   */
+
 .whoWe__about{
     font-size: 1.6rem;
     line-height: 4.2rem;
@@ -162,7 +181,7 @@
     margin-top: 12rem;
 }
 
-#strategies .about__text>div {
+#strategies .about__text > div {
     flex: 1;
     min-width: 23rem;
 }
