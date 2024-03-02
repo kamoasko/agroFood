@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -17,197 +17,235 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="./assets/css/general.css"/>
-    <link rel="stylesheet" href="./assets/css/style.css"/>
-    <link rel="stylesheet" href="./assets/css/about.css"/>
+    <link rel="stylesheet" href="./assets/css/general.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/about.css" />
 
     <title>About</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <div id="aboutPage">
+      <header
+        style="background-image: url(./assets/img/about/about\ header.png)"
+      >
+        <!-- haqqimizda sozunun arxa fon sekli -->
+        <h1>haqqımızda</h1>
+      </header>
 
-        <header style="background-image: url(./assets/img/about/about\ header.png);">   <!-- haqqimizda sozunun arxa fon sekli -->
-            <h1>haqqımızda</h1>
-        </header>
-        
-        <main>
-             
-            <section class="about__headSection container">
-                <nav class="">
-                    <ul class="about__nav">
-                        <li id="about_nav-about" class="about__nav--link">
-                            <a>Biz kimik?</a>
-                        </li>
-                        <li id="about_nav-strategies" class="about__nav--link">
-                            <a>Strategiyamız</a>
-                        </li>
-                        <li id="about_nav-cooperation" class="about__nav--link">
-                            <a>Əməkdaşlıq üçün</a>
-                        </li>
-                        <li id="about_nav-responsibility" class="about__nav--link">
-                            <a>Korporativ Sosial Məsuliyyət</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="about__headSection--image">
-                    <img src="./assets/img/about/whoWe.png"/>       <!-- biz kimik sekili -->
+      <main>
+        <section class="about__headSection container">
+          <nav class="">
+            <ul class="about__nav">
+              <li id="about_nav-about" class="about__nav--link">
+                <a>Biz kimik?</a>
+              </li>
+              <li id="about_nav-strategies" class="about__nav--link">
+                <a>Strategiyamız</a>
+              </li>
+              <li id="about_nav-cooperation" class="about__nav--link">
+                <a>Əməkdaşlıq üçün</a>
+              </li>
+              <li id="about_nav-responsibility" class="about__nav--link">
+                <a>Korporativ Sosial Məsuliyyət</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="about__headSection--image">
+            <img src="./assets/img/about/whoWe.png" />
+            <!-- biz kimik sekili -->
+          </div>
+        </section>
+
+        <section id="whoWe" class="container about__contentSection">
+          <h2 class="contentSection__heading">Biz kimik?</h2>
+          <p class="whoWe__about">
+            Agro Food Investments MMC (AFI) Azərbaycanın aparıcı kənd
+            təsərrüfatı və qida şirkətlərindən biridir. AFİ bir sıra şirkətləri
+            və bir sıra obyektləri, o cümlədən fındıq emalı fabriki, badam emalı
+            fabriki, çiçək yağı distillə zavodu, ting və calaqaltı istehsalı,
+            açıq sahədə və istixanalarda qızılgül və gül yetişdirilməsi, çay
+            emalı zavodu və çay plantasiyaları, minlərlə hektar fındıq, badam,
+            zeytun və qarışıq meyvə bağlarını idarə edir. Bundan əlavə, qrupumuz
+            logistika, anbar, soyuq və quru anbarlar, laboratoriyalar və s. kimi
+            tamamlayıcı əməliyyatları ilə keyfiyyət və davamlılığa nail olmaq
+            üçün dəyər zəncirinin bir neçə mərhələsində iştirak etmişdir.
+            Vizyonumuz maraqlı tərəflərimiz üçün dəyər yaradaraq texnologiyaya
+            əsaslanan, ekoloji cəhətdən təmiz davamlı istehsal və xidmətlərə
+            yönəlmiş müxtəlif bazarlarda etibarlı aqro-ərzaq tərəfdaşı olmaqdır.
+          </p>
+          <div class="about__groupCompany">
+            <h3 class="groupCompany__heading">Qrup şirkətləri</h3>
+            <div class="groupCompany__items">
+              <!-- forEach THIS -->
+              <div class="cardBox">
+                <div class="cardBox__img">
+                  <img src="./assets/img/about/cardBox.png" />
                 </div>
-            </section>
-
-            <section id="whoWe" class="container about__contentSection">
-                <h2 class="contentSection__heading">Biz kimik?</h2>
-                <p class="whoWe__about">
-                    Agro Food Investments MMC (AFI) Azərbaycanın aparıcı kənd təsərrüfatı və qida şirkətlərindən biridir. AFİ bir sıra şirkətləri və bir sıra obyektləri, o cümlədən fındıq emalı fabriki, badam emalı fabriki, çiçək yağı distillə zavodu, ting və calaqaltı istehsalı, açıq sahədə və istixanalarda qızılgül və gül yetişdirilməsi, çay emalı zavodu və çay plantasiyaları, minlərlə hektar fındıq, badam, zeytun və qarışıq meyvə bağlarını idarə edir. Bundan əlavə, qrupumuz logistika, anbar, soyuq və quru anbarlar, laboratoriyalar və s. kimi tamamlayıcı əməliyyatları ilə keyfiyyət və davamlılığa nail olmaq üçün dəyər zəncirinin bir neçə mərhələsində iştirak etmişdir. Vizyonumuz maraqlı tərəflərimiz üçün dəyər yaradaraq texnologiyaya əsaslanan, ekoloji cəhətdən təmiz davamlı istehsal və xidmətlərə yönəlmiş müxtəlif bazarlarda etibarlı aqro-ərzaq tərəfdaşı olmaqdır.
-                </p>
-                <div class="about__groupCompany">
-                    <h3 class="groupCompany__heading">Qrup şirkətləri</h3>
-                    <div class="groupCompany__items">
-
-                        <!-- forEach THIS -->
-                        <div class="cardBox">
-                            <div class="cardBox__img">
-                                <img src="./assets/img/about/cardBox.png">
-                            </div>
-                            <div class="cardBox__content--backg">
-                                <div class="cardBox__content">
-                                    <div class="cardBox__text">
-                                        <h4 class="cardBox__title">
-                                            GRAND AGRO MMC
-                                        </h4>
-                                        <p class="cardBox__desc">
-                                            MƏHSUL PORTFELİ: ZEYTUN YAĞI (EXTRA VİRGİN) SÜFRƏLİK ZEYTUN (QARA, YAŞIL)...
-                                        </p>
-                                    </div>
-                                    <button class="cardBox__btn flex-center">Daha çox</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="cardBox">
-                            <div class="cardBox__img">
-                                <img src="./assets/img/about/cardBox.png">
-                            </div>
-                            <div class="cardBox__content--backg">
-                                <div class="cardBox__content">
-                                    <div class="cardBox__text">
-                                        <h4 class="cardBox__title">
-                                            GRAND AGRO MMC
-                                        </h4>
-                                        <p class="cardBox__desc">
-                                            MƏHSUL PORTFELİ: ZEYTUN YAĞI (EXTRA VİRGİN) SÜFRƏLİK ZEYTUN (QARA, YAŞIL)...
-                                        </p>
-                                    </div>
-                                    <button class="cardBox__btn flex-center">Daha çox</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="cardBox">
-                            <div class="cardBox__img">
-                                <img src="./assets/img/about/cardBox.png">
-                            </div>
-                            <div class="cardBox__content--backg">
-                                <div class="cardBox__content">
-                                    <div class="cardBox__text">
-                                        <h4 class="cardBox__title">
-                                            GRAND AGRO MMC
-                                        </h4>
-                                        <p class="cardBox__desc">
-                                            MƏHSUL PORTFELİ: ZEYTUN YAĞI (EXTRA VİRGİN) SÜFRƏLİK ZEYTUN (QARA, YAŞIL)...
-                                        </p>
-                                    </div>
-                                    <button class="cardBox__btn flex-center">Daha çox</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="cardBox">
-                            <div class="cardBox__img">
-                                <img src="./assets/img/about/cardBox.png">
-                            </div>
-                            <div class="cardBox__content--backg">
-                                <div class="cardBox__content">
-                                    <div class="cardBox__text">
-                                        <h4 class="cardBox__title">
-                                            GRAND AGRO MMC
-                                        </h4>
-                                        <p class="cardBox__desc">
-                                            MƏHSUL PORTFELİ: ZEYTUN YAĞI (EXTRA VİRGİN) SÜFRƏLİK ZEYTUN (QARA, YAŞIL)...
-                                        </p>
-                                    </div>
-                                    <button class="cardBox__btn flex-center">Daha çox</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="cardBox">
-                            <div class="cardBox__img">
-                                <img src="./assets/img/about/cardBox.png">
-                            </div>
-                            <div class="cardBox__content--backg">
-                                <div class="cardBox__content">
-                                    <div class="cardBox__text">
-                                        <h4 class="cardBox__title">
-                                            GRAND AGRO MMC
-                                        </h4>
-                                        <p class="cardBox__desc">
-                                            MƏHSUL PORTFELİ: ZEYTUN YAĞI (EXTRA VİRGİN) SÜFRƏLİK ZEYTUN (QARA, YAŞIL)...
-                                        </p>
-                                    </div>
-                                    <button class="cardBox__btn flex-center">Daha çox</button>
-                                </div>
-                            </div>
-                        </div>
-
+                <div class="cardBox__content--backg">
+                  <div class="cardBox__content">
+                    <div class="cardBox__text">
+                      <h4 class="cardBox__title">GRAND AGRO MMC</h4>
+                      <p class="cardBox__desc">
+                        MƏHSUL PORTFELİ: ZEYTUN YAĞI (EXTRA VİRGİN) SÜFRƏLİK
+                        ZEYTUN (QARA, YAŞIL)...
+                      </p>
                     </div>
+                    <button class="cardBox__btn flex-center">Daha çox</button>
+                  </div>
                 </div>
-            </section>
+              </div>
 
-
-            <section id="strategies" class="container about__contentSection active">
-                <h2 class="contentSection__heading">Strategiyamız</h2>
-                <h3 class="strategies__values--heading">DƏYƏRLƏRİMİZ:</h3>
-
-                <div class="strategies__container">
-
-                    <!-- forEach THIS ↓ -->
-                    <div class="strategies__content">
-                        <div class="strategy__icon">
-                            <img decoding="async" src="./assets/img/about/values.png" class="img-fluid entered lazyloaded" alt="strategies" data-was-processed="true" data-ll-status="loaded">
-                        </div>
-                        <h5> DÜRÜSTLÜK</h5>
-                    </div>
-
-                    <div class="strategies__content">
-                        <div class="strategy__icon">
-                            <img decoding="async" src="./assets/img/about/values.png" class="img-fluid entered lazyloaded" alt="strategies" data-was-processed="true" data-ll-status="loaded">
-                        </div>
-                        <h5> DÜRÜSTLÜK</h5>
-                    </div>
-
-                    <div class="strategies__content">
-                        <div class="strategy__icon">
-                            <img decoding="async" src="./assets/img/about/values.png" class="img-fluid entered lazyloaded" alt="strategies" data-was-processed="true" data-ll-status="loaded">
-                        </div>
-                        <h5> DÜRÜSTLÜK</h5>
-                    </div>
-
-                    <div class="strategies__content">
-                        <div class="strategy__icon">
-                            <img decoding="async" src="./assets/img/about/values.png" class="img-fluid entered lazyloaded" alt="strategies" data-was-processed="true" data-ll-status="loaded">
-                        </div>
-                        <h5> DÜRÜSTLÜK</h5>
-                    </div>
-
-                    <div class="strategies__content">
-                        <div class="strategy__icon">
-                            <img decoding="async" src="./assets/img/about/values.png" class="img-fluid entered lazyloaded" alt="strategies" data-was-processed="true" data-ll-status="loaded">
-                        </div>
-                        <h5> DÜRÜSTLÜK</h5>
-                    </div>
-
+              <div class="cardBox">
+                <div class="cardBox__img">
+                  <img src="./assets/img/about/cardBox.png" />
                 </div>
+                <div class="cardBox__content--backg">
+                  <div class="cardBox__content">
+                    <div class="cardBox__text">
+                      <h4 class="cardBox__title">GRAND AGRO MMC</h4>
+                      <p class="cardBox__desc">
+                        MƏHSUL PORTFELİ: ZEYTUN YAĞI (EXTRA VİRGİN) SÜFRƏLİK
+                        ZEYTUN (QARA, YAŞIL)...
+                      </p>
+                    </div>
+                    <button class="cardBox__btn flex-center">Daha çox</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cardBox">
+                <div class="cardBox__img">
+                  <img src="./assets/img/about/cardBox.png" />
+                </div>
+                <div class="cardBox__content--backg">
+                  <div class="cardBox__content">
+                    <div class="cardBox__text">
+                      <h4 class="cardBox__title">GRAND AGRO MMC</h4>
+                      <p class="cardBox__desc">
+                        MƏHSUL PORTFELİ: ZEYTUN YAĞI (EXTRA VİRGİN) SÜFRƏLİK
+                        ZEYTUN (QARA, YAŞIL)...
+                      </p>
+                    </div>
+                    <button class="cardBox__btn flex-center">Daha çox</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cardBox">
+                <div class="cardBox__img">
+                  <img src="./assets/img/about/cardBox.png" />
+                </div>
+                <div class="cardBox__content--backg">
+                  <div class="cardBox__content">
+                    <div class="cardBox__text">
+                      <h4 class="cardBox__title">GRAND AGRO MMC</h4>
+                      <p class="cardBox__desc">
+                        MƏHSUL PORTFELİ: ZEYTUN YAĞI (EXTRA VİRGİN) SÜFRƏLİK
+                        ZEYTUN (QARA, YAŞIL)...
+                      </p>
+                    </div>
+                    <button class="cardBox__btn flex-center">Daha çox</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cardBox">
+                <div class="cardBox__img">
+                  <img src="./assets/img/about/cardBox.png" />
+                </div>
+                <div class="cardBox__content--backg">
+                  <div class="cardBox__content">
+                    <div class="cardBox__text">
+                      <h4 class="cardBox__title">GRAND AGRO MMC</h4>
+                      <p class="cardBox__desc">
+                        MƏHSUL PORTFELİ: ZEYTUN YAĞI (EXTRA VİRGİN) SÜFRƏLİK
+                        ZEYTUN (QARA, YAŞIL)...
+                      </p>
+                    </div>
+                    <button class="cardBox__btn flex-center">Daha çox</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="strategies" class="container about__contentSection active">
+          <h2 class="contentSection__heading">Strategiyamız</h2>
+          <h3 class="strategies__values--heading">DƏYƏRLƏRİMİZ:</h3>
+
+          <div class="strategies__container">
+            <!-- forEach THIS ↓ -->
+            <div class="strategies__content">
+              <div class="strategy__icon">
+                <img
+                  decoding="async"
+                  src="./assets/img/about/values.png"
+                  class="img-fluid entered lazyloaded"
+                  alt="strategies"
+                  data-was-processed="true"
+                  data-ll-status="loaded"
+                />
+              </div>
+              <h5>DÜRÜSTLÜK</h5>
+            </div>
+
+            <div class="strategies__content">
+              <div class="strategy__icon">
+                <img
+                  decoding="async"
+                  src="./assets/img/about/values.png"
+                  class="img-fluid entered lazyloaded"
+                  alt="strategies"
+                  data-was-processed="true"
+                  data-ll-status="loaded"
+                />
+              </div>
+              <h5>DÜRÜSTLÜK</h5>
+            </div>
+
+            <div class="strategies__content">
+              <div class="strategy__icon">
+                <img
+                  decoding="async"
+                  src="./assets/img/about/values.png"
+                  class="img-fluid entered lazyloaded"
+                  alt="strategies"
+                  data-was-processed="true"
+                  data-ll-status="loaded"
+                />
+              </div>
+              <h5>DÜRÜSTLÜK</h5>
+            </div>
+
+            <div class="strategies__content">
+              <div class="strategy__icon">
+                <img
+                  decoding="async"
+                  src="./assets/img/about/values.png"
+                  class="img-fluid entered lazyloaded"
+                  alt="strategies"
+                  data-was-processed="true"
+                  data-ll-status="loaded"
+                />
+              </div>
+              <h5>DÜRÜSTLÜK</h5>
+            </div>
+
+            <div class="strategies__content">
+              <div class="strategy__icon">
+                <img
+                  decoding="async"
+                  src="./assets/img/about/values.png"
+                  class="img-fluid entered lazyloaded"
+                  alt="strategies"
+                  data-was-processed="true"
+                  data-ll-status="loaded"
+                />
+              </div>
+              <h5>DÜRÜSTLÜK</h5>
+            </div>
+          </div>
 
                 <!-- Strategies text -->
                 <div class="about__text">
@@ -217,71 +255,94 @@
 
             </section>
 
+          <!-- Strategies text -->
+          <div class="about__text">
+            <div>{!! $about->getTranslatedAttribute('strategies_text') !!}</div>
+            <div>{!! $about->getTranslatedAttribute('our_mission') !!}</div>
+          </div>
+        </section>
 
-            <section id="cooperation" class="container about__contentSection">
-                <h2 class="contentSection__heading">Əməkdaşlıq üçün</h2>
-                <div class="coop__contact">
-                    <ul class="coop__contact--list">
-                        <li class="coop__contact--heading">
-                            <h4> Şirkətlər </h4>
-                            <h4> Əlaqə </h4>
-                        </li>
-                        
-                        <!-- forEach this ↓ -->
-                        <li class="contact__list--item">
-                            <span> GRAND AGRO MMC </span>
-                            <a  href="mailto:{{ $action->email }}"> info@grandagro.az </a>
-                        </li>
+        <section id="cooperation" class="container about__contentSection">
+          <h2 class="contentSection__heading">Əməkdaşlıq üçün</h2>
+          <div class="coop__contact">
+            <ul class="coop__contact--list">
+              <li class="coop__contact--heading">
+                <h4>Şirkətlər</h4>
+                <h4>Əlaqə</h4>
+              </li>
 
-                        <li class="contact__list--item">
-                            <span> GRAND AGRO MMC </span>
-                            <a  href="mailto:{{ $action->email }}"> info@grandagro.az </a>
-                        </li>
+              <!-- forEach this ↓ -->
+              <li class="contact__list--item">
+                <span> GRAND AGRO MMC </span>
+                <a href="mailto:{{ $action->email }}"> info@grandagro.az </a>
+              </li>
 
-                        <li class="contact__list--item">
-                            <span> GRAND AGRO MMC </span>
-                            <a  href="mailto:{{ $action->email }}"> info@grandagro.az </a>
-                        </li>
+              <li class="contact__list--item">
+                <span> GRAND AGRO MMC </span>
+                <a href="mailto:{{ $action->email }}"> info@grandagro.az </a>
+              </li>
 
-                        <li class="contact__list--item">
-                            <span> GRAND AGRO MMC </span>
-                            <a  href="mailto:{{ $action->email }}"> info@grandagro.az </a>
-                        </li>
+              <li class="contact__list--item">
+                <span> GRAND AGRO MMC </span>
+                <a href="mailto:{{ $action->email }}"> info@grandagro.az </a>
+              </li>
 
-                        <li class="contact__list--item">
-                            <span> GRAND AGRO MMC </span>
-                            <a  href="mailto:{{ $action->email }}"> info@grandagro.az </a>
-                        </li>
+              <li class="contact__list--item">
+                <span> GRAND AGRO MMC </span>
+                <a href="mailto:{{ $action->email }}"> info@grandagro.az </a>
+              </li>
 
-                        <li class="contact__list--item">
-                            <span> GRAND AGRO MMC </span>
-                            <a  href="mailto:{{ $action->email }}"> info@grandagro.az </a>
-                        </li>
-                        
-                    </ul>
-                 </div>
-            </section>
+              <li class="contact__list--item">
+                <span> GRAND AGRO MMC </span>
+                <a href="mailto:{{ $action->email }}"> info@grandagro.az </a>
+              </li>
 
+              <li class="contact__list--item">
+                <span> GRAND AGRO MMC </span>
+                <a href="mailto:{{ $action->email }}"> info@grandagro.az </a>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-            <section id="responsibility" class="container about__contentSection">
-                <h2 class="contentSection__heading">Korporativ Sosial Məsuliyyət</h2>
-                <p class="responsibility__text">
-                    “Agro Food Investments” MMC qrupuna daxil olan şirkətlər Korporativ Sosial Məsuliyyət (KSM) tədbirləri çərçivəsində müxtəlif ekoloji (4 tədbir), etik (10 tədbir) və xeyriyyə (20 tədbir) tədbirlərinin təşkilinə ümumilikdə 900 000 manat vəsait xərcləyib. <br/><br/>
+        <section id="responsibility" class="container about__contentSection">
+          <h2 class="contentSection__heading">Korporativ Sosial Məsuliyyət</h2>
+          <p class="responsibility__text">
+            “Agro Food Investments” MMC qrupuna daxil olan şirkətlər Korporativ
+            Sosial Məsuliyyət (KSM) tədbirləri çərçivəsində müxtəlif ekoloji (4
+            tədbir), etik (10 tədbir) və xeyriyyə (20 tədbir) tədbirlərinin
+            təşkilinə ümumilikdə 900 000 manat vəsait xərcləyib. <br /><br />
 
-                    Bundan əlavə, qrupa daxil olan şirkətlər təkcə Abşeron yarımadasında təxminən 3000 hektar müasir suvarılan zeytun və badam bağlarına sahibdirlər ki, bu da ümumilikdə ildə təxminən 3600 ton karbon qazı ekvivalentini sekvestr etməklə Bakının atmosferinə müsbət təsir göstərir. <br/><br/>
+            Bundan əlavə, qrupa daxil olan şirkətlər təkcə Abşeron yarımadasında
+            təxminən 3000 hektar müasir suvarılan zeytun və badam bağlarına
+            sahibdirlər ki, bu da ümumilikdə ildə təxminən 3600 ton karbon qazı
+            ekvivalentini sekvestr etməklə Bakının atmosferinə müsbət təsir
+            göstərir. <br /><br />
 
-                    Agro Food Investments MMC qrupuna daxil olan “Grand-Agro” MMC, “Grand-Agro Invitro” MMC və AZBADAM şirkətlərinin əməkdaşları “Milli Hematologiya və Transfuziya”nın təşkil etdiyi #TalassemiyaFreeHəyatNaminə proqramı çərçivəsində könüllü qanvermə aksiyasında iştirak ediblər. Azərbaycan Respublikası Səhiyyə Nazirliyinin Korporativ Sosial Məsuliyyət tədbirləri çərçivəsində. . <br/><br/>
+            Agro Food Investments MMC qrupuna daxil olan “Grand-Agro” MMC,
+            “Grand-Agro Invitro” MMC və AZBADAM şirkətlərinin əməkdaşları “Milli
+            Hematologiya və Transfuziya”nın təşkil etdiyi
+            #TalassemiyaFreeHəyatNaminə proqramı çərçivəsində könüllü qanvermə
+            aksiyasında iştirak ediblər. Azərbaycan Respublikası Səhiyyə
+            Nazirliyinin Korporativ Sosial Məsuliyyət tədbirləri çərçivəsində. .
+            <br /><br />
 
-                    “Agro Food Investments” MMC qrupuna daxil olan şirkətlər “Back to school” layihəsi (aztəminatlı işçilərin övladları üçün məktəb ləvazimatlarının alınması), Şəhidlərin Anım Günü (Şəhid övladları və onların ailələri üçün tədbirin təşkili) təşkil edəcək. , Azərbaycan, 2023-cü ildə Korporativ Sosial Məsuliyyət (KSM) tədbirləri çərçivəsində Dövlət Aqrar Universitetində və Azərbaycan Texnologiya Universitetində xüsusi tədbirlər (sinflərin yaradılması, dərsliklərin alınması, xüsusi təcrübə proqramlarının təşkili, seminarların keçirilməsi, tələbələr üçün xüsusi təqaüdlərin ayrılması) keçirilib. tələbələr), zəlzələdən zərərçəkənlərə yardım məqsədilə Türkiyənin AFAD fonduna ödənişlər etmək və Uşaq Evini ziyarət etmək.
-
-                    DeepL.com ilə tərcümə edilmişdir (pulsuz versiya)
-                </p>
-            </section>
-    
-
-        </main>
+            “Agro Food Investments” MMC qrupuna daxil olan şirkətlər “Back to
+            school” layihəsi (aztəminatlı işçilərin övladları üçün məktəb
+            ləvazimatlarının alınması), Şəhidlərin Anım Günü (Şəhid övladları və
+            onların ailələri üçün tədbirin təşkili) təşkil edəcək. , Azərbaycan,
+            2023-cü ildə Korporativ Sosial Məsuliyyət (KSM) tədbirləri
+            çərçivəsində Dövlət Aqrar Universitetində və Azərbaycan Texnologiya
+            Universitetində xüsusi tədbirlər (sinflərin yaradılması,
+            dərsliklərin alınması, xüsusi təcrübə proqramlarının təşkili,
+            seminarların keçirilməsi, tələbələr üçün xüsusi təqaüdlərin
+            ayrılması) keçirilib. tələbələr), zəlzələdən zərərçəkənlərə yardım
+            məqsədilə Türkiyənin AFAD fonduna ödənişlər etmək və Uşaq Evini
+            ziyarət etmək. DeepL.com ilə tərcümə edilmişdir (pulsuz versiya)
+          </p>
+        </section>
+      </main>
     </div>
-
 
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -290,5 +351,5 @@
     ></script>
     <!-- <script src="./assets/js/general.js"></script> -->
     <script src="./assets/js/about.js"></script>
-</body>
+  </body>
 </html>
