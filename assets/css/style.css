@@ -1,9 +1,10 @@
 :root {
+  --color-darkGray: #333;
   --color-dark: #101820;
   --color-white: #ffffff;
   --color-green: #4c9c2e;
   --color-darkGreen: #1b6f59;
-  --color-darkerGreen: rgb(5, 48, 37);
+  --color-darkerGreen: #053025;
   --color-cyan: #00a19b;
   --color-grey-blue: #7b8f9a;
   --color-blue: #124635;
@@ -75,6 +76,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/* span{
+  display: inline-block;
+} */
 
 h1 {
   font-weight: 700;
