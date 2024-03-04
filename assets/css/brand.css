@@ -1,0 +1,102 @@
+.brand {
+  margin-top: 8rem;
+}
+
+.brand__container {
+  gap: 5rem;
+}
+
+.brand__detail,
+.brand__img {
+  flex: 1;
+}
+
+.brand__detail h2 {
+  text-align: center;
+  color: var(--color-gray);
+}
+
+.brand__detail p {
+  margin-top: 2.5rem;
+  color: var(--color-gray);
+  text-align: justify;
+  font-size: 1.4rem;
+}
+
+/* brand products */
+
+.brand__wrapper {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 24rem), 35.8rem));
+  gap: 6rem;
+  place-content: center;
+}
+
+.brand__product-card {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.brand__product-card:hover .brand__product-img img {
+  -webkit-transform: scale(1.2) translateZ(0);
+  transform: scale(1.2) translateZ(0);
+  -webkit-transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+}
+
+.brand__product-card:not(:hover) .brand__product-img img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+}
+
+.brand__product-detail {
+  position: relative;
+  margin: -40px 20px 0;
+  padding: 30px 20px 20px;
+  background-color: #fff;
+  line-height: 1;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-dark-yellow);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.brand__product-card:hover .brand__product-detail {
+  transform: translateY(-60%);
+}
+
+.brand__product-detail h5 {
+  text-transform: none;
+  font-size: 2rem;
+  color: var(--color-darker-yellow);
+}
+
+.brand__product-detail a {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.brand__product-detail a:hover {
+  color: var(--color-yellow);
+}
+
+/* search result */
+
+.search-result {
+  margin-top: 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .brand__container {
+    flex-direction: column;
+  }
+}
