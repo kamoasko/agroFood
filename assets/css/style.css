@@ -83,7 +83,7 @@ a {
 
 h1 {
   font-weight: 700;
-  font-size: 10rem;
+  font-size: clamp(3.4rem, 6.9vw, 10rem);
   line-height: 10rem;
   letter-spacing: -0.01em;
   color: var(--color-dark);
@@ -92,7 +92,7 @@ h1 {
 
 h2 {
   font-weight: 600;
-  font-size: 4.8rem;
+  font-size: clamp(2.8rem, 3.4vw, 4.8rem);
   line-height: 5.2rem;
   color: var(--color-dark);
   font-family: var(--secondary-font) !important;
@@ -100,7 +100,7 @@ h2 {
 
 h3 {
   font-weight: 600;
-  font-size: 2.8rem;
+  font-size: clamp(2.4rem, 2vw, 2.8rem);
   line-height: 3.8rem;
   letter-spacing: -0.015em;
   color: var(--color-dark);

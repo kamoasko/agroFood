@@ -1,0 +1,79 @@
+#sendCVPage{
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sendCVPage .sendCVPage__content{
+    width: 100%;
+    min-height: 100vh;  
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sendCV__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 3rem;
+    width: min(90%, 65rem);
+}
+
+.sendCV__section h1{
+    color: var(--color-white);
+    font-size: clamp(3.2rem, 4.2vw, 6rem);
+    line-height: 1.1;
+    font-weight: 600;
+    text-align: center;
+}
+.sendCV__section h3 {
+    color: var(--color-white);
+    font-size: clamp(2.6rem, 2.2vw ,3rem);
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+
+.action__left {
+    width: 100%;
+}
+
+.action__cv{
+    display: none;
+}
+
+.action__left--icon {
+    width: 4.2rem;
+    height: 4.2rem;
+    object-fit: contain;
+}
+
+.action__left--file {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    border: 2px dashed white;
+    border-radius: 2rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: inherit;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    min-height: 8rem;
+}
+
+.action__left--browse {
+    text-decoration: underline;
+    color: var(--color-white);
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+}

@@ -67,7 +67,7 @@ function changeImage () {
     } 
 }
 
-// changeImage();
+// changeImage();   turn on this !!!
 
 
 

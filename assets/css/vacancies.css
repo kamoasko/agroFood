@@ -1,0 +1,139 @@
+#vacanciesPage header {
+    width: 100%;
+    height: 57.6rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.vacanciesPage__header--backdropBlur{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#vacanciesPage header h1 {
+    font-size: clamp(3.2rem, 4.2vw, 6rem);
+    color: var(--color-white);
+}
+
+#vacanciesPage .selectOption{
+    display: flex;
+    justify-content: flex-end;
+    margin-block: 7rem 4rem;
+}
+
+#vacanciesPage .selectOption select{
+    width: min(100%, 41rem);
+    height: 5rem;
+    color: rgba(51, 100, 126);
+    outline: 1px solid rgba(51, 100, 126, 0.237);
+    border-radius: 0.5rem;
+}
+
+#vacanciesPage .vacanciesSection{
+    margin-block: 4rem 6rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35.5rem, 1fr));
+    column-gap: 4rem;
+    row-gap: 5rem;
+}
+
+#vacanciesPage .vacancy{
+    width: min(100%, 35.5rem);
+    height: 27rem;
+    box-shadow: 0px 1.6rem 4rem rgba(112, 144, 176, 0.15);
+    padding: 3rem 1.5rem 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.4s ease;
+}
+#vacanciesPage .vacancy.more{
+    height: 37.1rem;
+}
+
+.vacancy__title{
+    color: var(--color-blue);
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.vacancy__detail p{
+    margin-bottom: 0.5rem;
+}
+.vacancy__price{
+    margin-bottom: 3rem;
+}
+.vacancy.more .vacancy__price{
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+.vacancy__openMore{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    color: var(--color-cyan);
+    font-size: 1.4rem;
+    font-weight: 1.6;
+    transition: 0.3s ease;
+}
+.vacancy__openMore:hover{
+    color: var(--color-yellow);
+}
+#vacanciesPage .vacancy.more .vacancy__openMore{
+    height: 0;
+    overflow: hidden;
+}
+
+#vacanciesPage .vacancy.more .vacancy__more{
+    border-top: 1px solid #66666625;
+    padding-block: 0.5rem;
+    transition: 0.4s ease;
+}
+#vacanciesPage .vacancy .vacancy__more, #vacanciesPage .vacancy .vacancy__more *{
+    border: none;
+    height: 0;
+    overflow: hidden;
+}
+#vacanciesPage .vacancy.more .vacancy__more, #vacanciesPage .vacancy .vacancy__more *{
+    height: unset;
+    overflow: unset;
+}
+
+#vacanciesPage .vacancy.more .vacancy__more--heading{
+    margin-bottom: 2rem;
+    font-family: var(--secondary-font) !important;
+    color: inherit;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#vacanciesPage .vacancy.more .vacancy__more--links{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+#vacanciesPage .vacancy.more .vacancy__more--btn{
+    color: var(--color-white);
+    background-color: var(--color-cyan);
+    width: 100%;
+    height: 4.6rem;
+    display: grid;
+    place-items: center;
+    border-radius: 0.5rem;
+}
+
+#vacanciesPage .vacancy.more .vacancy__closeMore{
+    width: 100%;
+    height: 4.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--color-blue);
+}

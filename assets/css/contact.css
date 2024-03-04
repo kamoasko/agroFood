@@ -1,0 +1,140 @@
+#contactPage header {
+    width: 100%;
+    height: 57.6rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contactPage__header--backdropBlur{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#contactPage header h1 {
+    font-size: clamp(3.2rem, 4.2vw, 6rem);
+    color: var(--color-white);
+}
+
+
+.contact__info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    justify-items: center;
+    column-gap: 3rem;
+    row-gap: 5rem;
+    margin-block: 14rem !important; 
+}
+
+.contact__info--items{
+    width: min(100%, 30rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact__info--logo{
+    color: var(--color-yellow);
+    font-size: 4.4rem;
+}
+.contact__info--title{
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #666666;
+    font-family: var(--secondary-font) !important;
+}
+.contact__info--content{
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #666666;
+}
+
+
+
+.communication__back{
+    background-color: #333;
+    padding-block: 14rem;
+    margin-block: 6rem;
+}
+
+.communication{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.communication__map{
+    flex: 1;
+}
+
+.communication__form{
+    flex: 1;
+
+}
+
+.communication__form--heading{
+    font-size: clamp(2.8rem, 2.8vw, 4rem);
+    color: var(--color-white);
+    line-height: 1.1;
+    font-weight: 600;
+    text-align: center;
+}
+
+.communication__form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__personalInfo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    row-gap: 2rem;
+    margin-block: 6rem 2rem;
+}
+
+.form__personalInfo input{
+    background-color: inherit;
+    border-bottom: 1px solid var(--color-white);
+    padding-block: 1.2rem;
+    margin-inline: 1.5rem;
+    color: var(--color-yellow);
+    font-weight: 600;
+}
+
+.communication__form form textarea{
+    background-color: inherit;
+    border-bottom: 1px solid var(--color-white);
+    padding-block: 1.2rem;
+    margin-inline: 1.5rem;
+    resize: vertical;
+    min-height: 12rem;
+    max-height: 22rem;
+    color: var(--color-yellow);
+    font-weight: 600;
+}
+
+.form__btn{
+    font-size: 1.2rem;
+    font-weight: 700;
+    height: 5.4rem;
+    display: grid;
+    place-items: center;
+    color: var(--color-white);
+    background-color: inherit;
+    border: 2px solid var(--color-yellow);
+    border-radius: 2.7rem;
+    margin: 5.5rem 1.5rem 0;
+    text-transform: uppercase;
+    transition: 0.35s ease;
+}
+.form__btn:hover{
+    background-color: var(--color-yellow);
+    color: #4f4a37;
+}
