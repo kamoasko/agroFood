@@ -1,5 +1,18 @@
 "use strict";
 
+//header fixed
+
+// const header1 = document.querySelector("header");
+
+// let headerScrollHandler = () => {
+//   header1.classList.toggle("active", scrollY > 100);
+// };
+
+// window.addEventListener("scroll", headerScrollHandler);
+// headerScrollHandler();
+
+// search open
+
 let openSearch = document.querySelector(".search__btn-active");
 let searchForm = document.querySelector(".search__form");
 let logo = document.querySelector(".header__logo");
@@ -69,13 +82,74 @@ $(document).ready(function () {
 let openSubBtns = document.querySelectorAll(".caret");
 let subMenus = document.querySelectorAll(".sub_menu");
 
-openSubBtns.forEach((a) => {
-  console.log(a);
-});
+// openSubBtns.forEach((a) => {
+//   console.log(a.parentElement.parentElement.childNodes[3]);
+// });
 
 openSubBtns.forEach((openSubBtn) => {
   openSubBtn.addEventListener("click", (e) => {
     e.currentTarget.classList.toggle("opened");
-    e.currentTarget.nextSibling.classList.toggle("opened");
+    e.currentTarget.classList.toggle("flex-center");
+    e.currentTarget.parentElement.parentElement.childNodes[3].classList.toggle(
+      "opened"
+    );
   });
 });
+
+// categories slider
+
+$(".categories__slider").slick({
+  //   dots: true,
+  infinite: true,
+  speed: 300,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  slidesToShow: 1,
+  fade: true,
+  cssEase: "linear",
+  arrows: false,
+  // adaptiveHeight: true
+});
+
+// brands slider
+
+$(".brands__slider").slick({
+  //   dots: true,
+  infinite: true,
+  speed: 300,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  slidesToShow: 1,
+  fade: true,
+  cssEase: "linear",
+  arrows: false,
+  // adaptiveHeight: true
+});
+
+// go to top button
+const goTopBtn = document.querySelector(".go-to-top");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 450) {
+    goTopBtn.style.display = "flex";
+  } else {
+    goTopBtn.style.display = "none";
+  }
+});
+
+goTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+// Scrollbar witdh
+
+const header1 = document.querySelector("header");
+const child = document.querySelector("main > div");
+// Get the scrollbar width
+const scrollbarWidth = child
+  ? child.parentNode.offsetWidth - child.offsetWidth
+  : "";
+header1.style.setProperty("--scroll-bar-width", scrollbarWidth + "px");

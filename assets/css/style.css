@@ -1,5 +1,7 @@
 :root {
   --color-darkGray: #333;
+  --color-gray: #666;
+  --color-black: #000000;
   --color-dark: #101820;
   --color-white: #ffffff;
   --color-green: #4c9c2e;
@@ -7,15 +9,18 @@
   --color-darkerGreen: #053025;
   --color-cyan: #00a19b;
   --color-grey-blue: #7b8f9a;
-  --color-blue: #124635;
+  --color-grey: #124635;
   --color-haki: #85af9a;
+  --color-brown: #4f4a37;
   --color-yellow: #fdda64;
+  --color-dark-yellow: #daa245;
+  --color-darker-yellow: #ddc051;
 
   --transition: all 400ms ease;
 
   --main-font: "Poppins", CenturyGothic, sans-serif;
   --secondary-font: "Montserrat", sans-serif, serif;
-  --container-width-main: 119.5rem;
+  --container-width-main: 120rem;
 }
 
 *,
@@ -42,8 +47,9 @@ body {
   line-height: 2.4rem;
   letter-spacing: -0.015em;
   overflow-x: hidden;
+  /* overflow-y: hidden; */
 
-  color: var(--color-grey-blue);
+  color: var(--color-white);
   background-color: var(--color-white);
   position: relative;
   min-height: 100vh;
@@ -83,18 +89,18 @@ a {
 
 h1 {
   font-weight: 700;
-  font-size: 10rem;
+  font-size: 6rem;
   line-height: 10rem;
   letter-spacing: -0.01em;
-  color: var(--color-dark);
+  color: var(--color-white);
   font-family: var(--secondary-font) !important;
 }
 
 h2 {
   font-weight: 600;
-  font-size: 4.8rem;
+  font-size: 4rem;
   line-height: 5.2rem;
-  color: var(--color-dark);
+  color: var(--color-white);
   font-family: var(--secondary-font) !important;
 }
 
@@ -120,24 +126,3 @@ button {
   cursor: pointer;
   background-color: transparent;
 }
-
-.pagination {
-  justify-content: center !important;
-}
-
-.pagination a {
-  padding: 0 !important;
-}
-
-.pagination a:hover {
-  color: #b4b4b4 !important;
-}
-
-.pagination .active a {
-  border: none !important;
-  background-color: #b4b4b4 !important;
-}
-
-/* .swiper-slide {
-    margin-right: 40px !important;
-} */
