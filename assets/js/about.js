@@ -1,4 +1,5 @@
-let currentPage = "who_us";
+let currentPage = document.getElementById("about-page").dataset.currentpage;
+console.log(currentPage);
 
 const aboutImage = document.querySelector('.about__headSection--image img');
 
@@ -14,7 +15,6 @@ const responsibilityLink = document.getElementById("about_nav-responsibility");
 
 
 function changeImage () {
-    const currentPath = window.location.pathname;
 
     whoWe.classList.remove("active");
     strategies.classList.remove("active");
