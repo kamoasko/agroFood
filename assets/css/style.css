@@ -109,7 +109,7 @@ h3 {
   font-size: clamp(2.4rem, 2vw, 2.8rem);
   line-height: 3.8rem;
   letter-spacing: -0.015em;
-  color: var(--color-dark);
+    
   font-family: var(--secondary-font) !important;
 }
 

@@ -53,6 +53,8 @@
 
 .natural__content--desc{
     background-color: white;
+    color: var(--color-dark);
+    text-align: justify;
     padding: 2rem 1rem;
     margin-block: 2rem;
     box-sizing: border-box;
